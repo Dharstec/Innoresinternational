@@ -1704,138 +1704,6 @@ section {
   color: #fff;
 }
 
-/* <!-- ======= People Section ======= --> */
-.chefs {
-  /* background: url("../img/chefs-bg.jpg") center center no-repeat; */
-  background-size: cover;
-  padding: 60px 0;
-  position: relative;
-}
-
-.chefs::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
-  z-index: 9;
-}
-
-.chefs .container {
-  position: relative;
-  z-index: 10;
-}
-
-.chefs .member {
-  text-align: center;
-  margin-bottom: 80px;
-  position: relative;
-}
-
-.chefs .member .pic {
-  overflow: hidden;
-}
-
-.chefs .member .member-info {
-  position: absolute;
-  bottom: -80px;
-  left: 20px;
-  right: 20px;
-  background: #fff;
-  padding: 20px 0;
-  color: #433f39;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
-}
-
-.chefs .member h4 {
-  /* font-weight: 500;
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #6c665c;
-  position: relative;
-  padding-bottom: 10px;
-  font-family: "Poppins", sans-serif; */
-  font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: var(--color-secondary);
-}
-
-.chefs .member h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #ffcf88;
-  bottom: 0;
-  left: calc(50% - 25px);
-
-  
-}
-
-.chefs .member span {
-  /* font-style: italic;
-  display: block;
-  font-size: 13px; */
-  display: block;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(33, 37, 41, 0.4);
-}
-
-.chefs .member .social {
-  margin-top: 15px;
-}
-
-.chefs .member .social a {
-  transition: color 0.3s;
-  color: #7a7368;
-}
-
-.chefs .member .social a:hover {
-  /* color: #ffb03b; */
-  color:  #7a7368;;
-}
-
-.chefs .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-@media (max-width: 992px) {
-  .chefs .member {
-    margin-bottom: 110px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .chefs {
-    background-attachment: fixed;
-  }
-}
-
-.chefs .member .member-info p{
-  font-style: italic;
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 26px;
-  color: rgba(33, 37, 41, 0.7);
-}
-.chefs .section-header-title h2{
-  margin: 0;
-  font-size: 48px;
-  font-weight: 400;
-  font-family: var(--font-primary);
-  text-align: center;
-}
-.chefs .section-header-title h2 span{
-  color: var(--color-primary);
-}
 
 /*--------------------------------------------------------------
 # Recent Blog Posts
@@ -2093,4 +1961,136 @@ section {
   font-style: italic;
   color: rgba(var(--color-gray-rgb), 0.8);
   margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Chefs people
+--------------------------------------------------------------*/
+.chefs {
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+}
+
+.chefs::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+}
+
+.chefs .container {
+  position: relative;
+  z-index: 10;
+}
+
+.chefs .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.chefs .member .pic {
+  overflow: hidden;
+}
+
+.chefs .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.chefs .member h4 {
+  font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--color-secondary);
+  /* font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #6c665c; */
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.chefs .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  /* background: #ffcf88; */
+  background:var(--color-primary);
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.chefs .member span {
+  font-style: italic;
+  display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 0.4);
+}
+
+.chefs .member .social {
+  margin-top: 15px;
+}
+
+.chefs .member .social a {
+  transition: color 0.3s;
+  color: #7a7368;
+}
+
+.chefs .member .social a:hover {
+  /* color: #ffb03b; */
+  color: var(--color-primary);
+}
+
+.chefs .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .chefs .member {
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chefs {
+    background-attachment: fixed;
+  }
+}
+
+.chefs .section-header-title h2{
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: var(--font-primary);
+  text-align: center;
+}
+.chefs .section-header-title h2 span{
+  color: var(--color-primary);
+}
+.chefs .member .member-info p {
+  font-style: italic;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 26px;
+    color: rgba(33, 37, 41, 0.7);
 }
