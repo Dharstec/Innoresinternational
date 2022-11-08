@@ -1117,6 +1117,41 @@ section {
 /*--------------------------------------------------------------
 # Chefs Section
 --------------------------------------------------------------*/
+.chefs .blog-pagination {
+  color: #816a6e;
+}
+
+.chefs .blog-pagination ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.chefs .blog-pagination li {
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.chefs .blog-pagination li a {
+  color: #493c3e;
+  padding: 7px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chefs .blog-pagination li.active,
+.chefs .blog-pagination li:hover {
+  /* background: #e43c5c; */
+  background: var(--color-primary);
+}
+
+.chefs .blog-pagination li.active a,
+.chefs .blog-pagination li:hover a {
+  color: #fff;
+}
+
 .chefs .chef-member {
   overflow: hidden;
   text-align: center;
@@ -2101,8 +2136,15 @@ section {
 --------------------------------------------------------------*/
 .blog {
   padding: 40px 0 20px 0;
+  
 }
-
+.blog h2{
+  margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    text-align: center;
+}
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
