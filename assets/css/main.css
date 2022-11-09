@@ -2138,7 +2138,7 @@ section {
   padding: 40px 0 20px 0;
   
 }
-.blog h2{
+.blog .section-header-tiltle-ongoing h2{
   margin: 0;
     font-size: 48px;
     font-weight: 400;
