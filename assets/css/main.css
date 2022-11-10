@@ -2783,7 +2783,7 @@ section {
   right: 0;
   bottom: 10px;
   height: 10px;
-  background: rgba(var(--color-primary-rgb), 0.5);
+  background: var(--color-primary);
   z-index: -1;
 }
 
@@ -2835,4 +2835,8 @@ section {
   position: relative;
   z-index: 3;
   border-radius: 15px;
+}
+
+.container .container__heading h2{
+  text-align: center;
 }
