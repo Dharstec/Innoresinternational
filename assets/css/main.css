@@ -2755,7 +2755,7 @@ section {
 
 .cta .container {
   padding: 80px;
-  background: rgba(var(--color-secondary-rgb), 0.1);
+  background-color: #eee;
   border-radius: 15px;
 }
 
@@ -2794,7 +2794,7 @@ section {
 }
 
 .cta .content .cta-btn {
-  color: var(--color-white);
+  color: white;
   font-weight: 500;
   font-size: 16px;
   display: inline-block;
@@ -2802,7 +2802,7 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 10px;
-  background: rgba(var(--color-primary-dark-rgb), 0.9);
+  background: var(--color-primary)
 }
 
 .cta .content .cta-btn:hover {
