@@ -283,11 +283,17 @@ section {
   border-color: #eee;
 }
 
-.header .logo img {
+/* .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+} */
+.header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 50px;
+  margin-left: -90px;
+  margin-top: -50px;
 }
-
 .header .logo h1 {
   font-size: 28px;
   font-weight: 700;
