@@ -2151,6 +2151,9 @@ section {
     font-family: var(--font-primary);
     text-align: center;
 }
+.blog .section-header-tiltle-ongoing h2 span{
+  color: var(--color-primary);
+}
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
