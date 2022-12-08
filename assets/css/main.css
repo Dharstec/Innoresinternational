@@ -595,8 +595,7 @@ section {
 --------------------------------------------------------------*/
 .about .about-img iframe {
   min-height: 500px;
-  min-width: 1100px;
-  align-items: center;
+  min-width: 1000px;
 }
 
 .about h3 {
