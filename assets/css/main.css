@@ -3042,7 +3042,12 @@ section {
   font-size: 20px;
   color: #ce1212;
 }
-
+.team-coordinator .member h5{
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
 .team-coordinator .member span {
   /* font-style: italic;
   display: block;
@@ -3060,6 +3065,7 @@ section {
   font-size: 14px;
   font-style: italic;
   color: #6c757d;
+  text-align: justify;
 }
 
 .team-coordinator .member .social {
