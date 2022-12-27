@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /**
    * Clients Slider
    */
- new Swiper('.clients-slider', {
+new Swiper('.clients-slider', {
   speed: 400,
   loop: true,
   autoplay: {
@@ -275,3 +275,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+//contact form
+{/* <script> */ }
+// function sendEmail() {
+//   Email.send({
+//     Host: "smtp.elasticemail.com",
+//     Username: "kumari@dharstec.com",
+//     Password: "E848FDEB68516CB4A9733ED8D20483C53687",
+//     To: 'kumari96sri@gmail.com',
+//     From: document.getElementById("email").value,
+//     Subject: "New Contact Form Enquiry",
+//     Body: "Name:" + document.getElementById("name").value
+//         +"<br> Email:" + document.getElementById("email").value
+//         +"<br> Subject:"+ document.getElementById('subject').value
+//         +"<br> Message:"+ document.getElementById('message').value
+
+//   }).then(
+//     message => alert(message)
+//   );
+// }
+// </script>
+
+// formspree code 
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
